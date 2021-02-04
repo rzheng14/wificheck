@@ -1,11 +1,13 @@
+This is code to check that I have wifi connection. Checks if I can connect to google and the noutputs it into a log. Logs are separated by day. I then used cron to automate this. Pasted the steps below.
+
+
 cd ~/
 crontab -e
 */10 * * * * cd ~/Documents/wificheck && /usr/local/bin/python3 wifi.py >> ~/Documents/wificheck/cron.txt 2>&1
 
 
 
-* * * * * commands 
-every 10 minutes, 
+* * * * * cd ~/path/ && /usr/local/bin/python3 filename >> ~/path/to/errorlog.txt 2>&1
 
-https://crontab.guru/
+I did every 10 minutes but can be customized. Use https://crontab.guru/ 
 
