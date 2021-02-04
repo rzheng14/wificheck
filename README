@@ -1,0 +1,11 @@
+cd ~/
+crontab -e
+*/10 * * * * cd ~/Documents/wificheck && /usr/local/bin/python3 wifi.py >> ~/Documents/wificheck/cron.txt 2>&1
+
+
+
+* * * * * commands 
+every 10 minutes, 
+
+https://crontab.guru/
+
